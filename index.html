@@ -24,36 +24,38 @@
         <section id="calculator">
 
 
-            <form action="/" id="form">
+            <form action="#" id="form">
                 <div id="screen">
                     <div id="screen-content">
-                        0.00
-                        <span id="total">0.00</span>
+                        <h1><input type="text" value="" placeholder="0.00" id="expression" disabled></h1>
+
+                        <h2><input id="total" type="number" placeholder="0.00" disabled></h2>
                     </div>
                 </div>
 
                 <section id="buttons">
                     <div id="numbers">
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                        <span>4</span>
-                        <span>5</span>
-                        <span>6</span>
-                        <span>7</span>
-                        <span>8</span>
-                        <span>9</span>
-                        <span>0</span>
-                        <span>.</span>
-                        <span><button>=</button></span>
+                        <span class="numberBtn">1</span>
+                        <span class="numberBtn">2</span>
+                        <span class="numberBtn">3</span>
+                        <span class="numberBtn">4</span>
+                        <span class="numberBtn">5</span>
+                        <span class="numberBtn">6</span>
+                        <span class="numberBtn">7</span>
+                        <span class="numberBtn">8</span>
+                        <span class="numberBtn">9</span>
+                        <span class="numberBtn">0</span>
+                        <span class="numberBtn">.</span>
+                        <span onclick="calculate()">=</span>
                     </div>
                     <div id="signs">
                         <ul>
-                            <li id="%">%</li>
-                            <li id="+">+</li>
-                            <li id="-">-</li>
-                            <li id="*">*</li>
-                            <li id="/">/</li>
+                            <li class="numberBtn signsBtn">%</li>
+                            <li class="numberBtn signsBtn">+</li>
+                            <li class="numberBtn signsBtn">-</li>
+                            <li class="numberBtn signsBtn">*</li>
+                            <li class="numberBtn signsBtn">/</li>
+                            <li id="del" onclick="deleteLast()">Del</li>
                         </ul>
                     </div>
                 </section>
@@ -65,6 +67,11 @@
         <p>Design by - &copy <a href="https://ltechwebconsultant.com/" target="_blank">
                     Ltech web consultant</a></p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="text/javascript"  src="js/script.js"></script>
 </body>
 
